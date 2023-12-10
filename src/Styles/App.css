@@ -1,5 +1,5 @@
 body {
-    background-image: url('./src/assets/bg.jpg');
+    background-image: url('./public/assets/bg.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
