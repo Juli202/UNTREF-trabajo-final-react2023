@@ -1,0 +1,13 @@
+[
+{"id":1, "type":"menu", "title":"Clásico(Entrada, Plato Principal y Postre)", "costoPersona": 10000},
+{"id":2, "type":"menu", "title":"Brunch", "costoPersona": 6000},
+{"id":3, "type":"menu", "title":"Mesa de Dulces", "costoPersona": 5000},
+{"id":4, "type":"menu", "title":"Puestos de Comida Mexicana", "costoPersona": 3000},
+{"id":5, "type":"menu","title":"Puestos de Comida Oriental", "costoPersona": 5000},
+{"id":6, "type":"menu", "title":"Puestos de Comida Rapida", "costoPersona": 4000},
+{"id":7, "type":"evento", "title":"Boda", "costoPersona": 250},
+{"id":8, "type":"evento", "title":"Cumpleaños Infantil", "costoPersona": 150},
+{"id":9, "type":"evento", "title":"Cumpleaños de 15", "costoPersona": 250},
+{"id":10, "type":"evento", "title":"Aniversario", "costoPersona": 150},
+{"id":11, "type":"evento", "title":"Evento Corporativo", "costoPersona": 250} 
+]
