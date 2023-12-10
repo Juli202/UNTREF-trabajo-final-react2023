@@ -7,7 +7,7 @@ const Layout = () => {
         <>
             <header>
              <h1>COTIZÁ TU CATERING</h1>
-              <Link to="/Historial" title="Ver Historial" className="history">
+              <Link to="Historial" title="Ver Historial" className="history">
               <span>📋</span>
               </Link>
              </header>
