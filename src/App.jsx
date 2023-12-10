@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes,} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./Components/Layout";
 import Formulario from "./Components/Formulario";
 import Historial from "./Components/Historial";
@@ -7,21 +7,18 @@ import './Styles/app.css';
 
 const App = () => {
   return (
-  <>
-    <BrowserRouter>
+    <Router>
       <Routes>
-        <Route path=""
-         element={
-         <Layout />
-        }>
-        <Route index element={<Formulario />}/>
-        </Route>
+        <Route
+          index
+          element={<Layout />}
+        />
         <Route path="Historial" element={<Historial />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </BrowserRouter>
-  </>
-  )
+    </Router>
+  );
 }
 
 export default App;
+
