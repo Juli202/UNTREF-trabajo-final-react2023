@@ -1,0 +1,11 @@
+body {
+    background-image: url('./src/assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  

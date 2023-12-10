@@ -1,0 +1,11 @@
+.volver{
+    background-color:black;
+    opacity: 0.8;
+    color: white;
+    padding: 0.8em; 
+    border: none;
+    border-radius: 0.3em; 
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
