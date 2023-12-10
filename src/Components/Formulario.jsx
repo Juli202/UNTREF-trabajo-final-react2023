@@ -17,6 +17,7 @@ const Formulario = () => {
   const [eventoSeleccionado, setEventoSeleccionado] = useState(null);
   const [invitados, setInvitados] = useState(20);
   const [total, setTotal] = useState();
+  const [cotizacionGuardada, setCotizacionGuardada] = useState(false);
 
   useEffect(() => {
     setLoad(true);
@@ -36,6 +37,7 @@ const Formulario = () => {
 
   const cotizar = (e) => {
     e.preventDefault();
+    setCotizacionGuardada(false);
     if ( menuSeleccionado == null || eventoSeleccionado == null || invitados <= 0) {
        return Swal.fire("", "Completá todos los datos", "error");
     }
@@ -54,6 +56,7 @@ const Formulario = () => {
       setLoad(false);
       e.target.reset();
     }, 3000);
+    e.target.reset();
   };
 
   const guardar = () => {
@@ -74,13 +77,13 @@ const Formulario = () => {
     );
 
     if (existeEnHistorial) {
-        Swal.fire("", "Ya guardaste este presupuesto anteriormente", "warning");
+      Swal.fire("", "Ya guardaste este presupuesto anteriormente", "warning");
     } else {
-        sethistorial([...historial, nuevoElemento]);
-        localStorage.setItem("Historial", JSON.stringify([...historial, nuevoElemento]));
-        Swal.fire("", "Historial actualizado", "success");
+      sethistorial([...historial, nuevoElemento]);
+      localStorage.setItem("Historial", JSON.stringify([...historial, nuevoElemento]));
+      Swal.fire("", "Historial actualizado", "success");
+      setCotizacionGuardada(true);
     }
-    return null;
 };
 
   return (
@@ -145,14 +148,14 @@ const Formulario = () => {
             <span>{invitados}</span>
           </fieldset>
           <button type="submit">Cotizar</button>
-          {total && (
-            <div>
-              <h2>Total: {total.toLocaleString("es-AR", { style: "currency", currency: "ARS" })}</h2>
-              <button type="button" onClick={guardar}>
-                Guardar
-              </button>
-            </div>
-          )}
+          {total && !cotizacionGuardada && (
+              <div>
+                <h2>Total: {total.toLocaleString("es-AR", { style: "currency", currency: "ARS" })}</h2>
+                <button type="button" onClick={guardar}>
+                  Guardar
+                </button>
+              </div>
+            )}
         </form>
         </section>
       )}
