@@ -3,7 +3,7 @@ import Layout from "./Components/Layout";
 import Formulario from "./Components/Formulario";
 import Historial from "./Components/Historial";
 import NotFound from "./Components/NotFound";
-import './Styles/app.css';
+import '../Styles/app.css';
 
 const App = () => {
   return (
