@@ -8,4 +8,9 @@
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
 }
