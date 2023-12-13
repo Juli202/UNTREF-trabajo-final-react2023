@@ -3,8 +3,7 @@ COTIZADOR DE CATERING - DOCUMENTACIÓN
 Este proyecto es un cotizador de catering para eventos desarrollado como trabajo final para la diplomatura en desarrollo frontend. Permite a los usuarios seleccionar el tipo de menú, el evento y la cantidad de invitados para obtener un presupuesto. Además, ofrece la posibilidad de guardar los presupuestos en un historial.
 
 - Instrucciones para desplegar el proyecto localmente
-    1- Cloná el respositorio (git clone [https://github.com/tu-usuario/tu-repositorio.git
-    cd tu-repositorio](https://github.com/Juli202/UNTREF-trabajo-final-react2023))
+    1- Cloná el respositorio (git clone (https://github.com/Juli202/UNTREF-trabajo-final-react2023))
 
     2- Instalá las dependencias (npm install)
     
